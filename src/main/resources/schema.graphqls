@@ -1,0 +1,32 @@
+type Query {
+    me: User
+    chronoTree: ChronoBranch!
+}
+
+type Mutation {
+    startFruit: ChronoSeed
+}
+
+type User {
+    email: String!
+    name: String!
+}
+
+type ChronoBranch {
+    name: String!
+    branches: [ChronoBranch!]!
+    fruits: [ChronoFruit!]!
+}
+
+type ChronoFruit {
+    name: String!
+    notes: String
+}
+
+type ChronoSeed {
+    shell: ChronoFruit!
+    user: User!
+    start: String!
+    end: String
+    notes: String
+}

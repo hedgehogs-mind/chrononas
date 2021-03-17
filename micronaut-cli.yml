@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.hedgehogsmind
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [annotation-api, app-name, data, data-jpa, gradle, graphql, h2, hibernate-jpa, hibernate-validator, http-client, java, java-application, jdbc-hikari, junit, lombok, netty-server, readme, shade, slf4j-simple, yaml]
